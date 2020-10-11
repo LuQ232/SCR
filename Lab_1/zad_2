@@ -1,0 +1,24 @@
+  cd $HOME                  -Przejście do katalogu HOME (można tez cd~)
+  touch pusty               -Stworzenie pliku o nazwie pusty
+  cp pusty drugi            -Skopiowanie pliku pusty i nadanie nazwy drugi
+  mv drugi drugipusty       -Zmiana nazwy pliku drugi na drugipusty
+  ls -l                     -Wyswietlenie wraz z informacjami
+  rm pusty drugipusty       -Usuniecie obu stworzonych plikow
+  cat /etc/termcap          -Wyswietlenie pliku temcap (u mnie brakuje tego pliku???)
+
+  less /etc/termcap         -Wyswietlenie pliku z mozliwoscia scrolowania (jest duzo przejrzyściej)
+    
+   i polecenia wewnętrzne programu less:
+     SPACE              - pełny ekran do przodu
+     b                  - pełny ekran do tyłu
+     j                  - wiersz w dół
+     k                  - wiersz w górę
+     G                  - na koniec pliku
+     g                  - na początek pliku
+     h                  - pomoc: sumaryczne zestawienie poleceń
+     /string            - przeszukiwanie do przodu
+     n                  - przeszukiwanie dalej
+     ?string            - przeszukiwanie do tyłu
+     N                  - przeszukiwanie dalej w drugą stronę
+  ls -l /etc | less         -Wyswietlenie wszytkiego co jest w etc ale z komendą less (Mozemy scrolowac i wszystko jest bardziej czytelne)
+  man less                  -Wyswietlenie instrukcji "less"
