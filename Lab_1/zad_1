@@ -1,0 +1,22 @@
+  cd                    -Poruszanie sie po folderach                    
+  ls                    -Wyswietlanie zawartosci folderu
+  ls -l                 -Dodatkowo wyswietlamy wiecej informacji(prawa dostepu data itp.)
+
+  ls -a                 -Dodatkowo wyswietlamy ukryte foldery i pliki
+  ls -1                 -Wyswietlenie folderow pionowo
+  man ls                -Wyswietlenie instrukcji komendy ls
+  mkdir podkatalog      -Stworzenie folderu podkatalog
+  ls -l                 -To co wyżej + pokazuje sie nam stworzony katalog
+  cd podkatalog         -Wejscie do stworzonego folderu
+  cd ..                 -Wyjście do katalogu "Wyżej"
+  rmdir podkatalog      -Usunięcie stwrzonego folderu
+  cd /                  -Wyjście do 
+  ls -l                 -Wyświetlenie zawartosci wraz z informacjami
+  cd /etc               -Wejscie do etc
+  ls                    -Wyświetlenie
+  ls -ltr               - t-> sortowanie wedlug czasu || r->odwrocone sortowanie(reverse)
+
+  ls -l *.conf          -Wyświetlenie z informacjami wszystkich plików z rozszerzeniem .conf
+
+  ls -l *.?             -Wyswietlenie z odpowiednim podzialem
+  ls -ld *.?            -To samo co wyżej ale są wszystkie informacje odnośnie folderow dzieki fladze -d
