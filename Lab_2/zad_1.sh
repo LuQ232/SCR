@@ -1,14 +1,13 @@
 #!/bin/bash
-LC_ALL=C
+export LC_ALL=C
 full_day_name=$(date +"%A") # %A zwraca pełną nazwę dnia
 set `date`  #wywoluje komende date, kolejne parametry 'date' są pod $1,$2,$3 itd..
 DZIEN=$1 # pod zmienną dzień przypisuje pierwszy parametr komendy 'date'(czyli dzien)
-
-if [ ${DZIEN} = 'sob,' ] || [ ${DZIEN} = 'nie,' ]
+if [ ${DZIEN} = 'Sat' ] || [ ${DZIEN} = 'Sun' ]
 then
-    echo "Dzis jest $full_day_name. WEEKEND!"
+    echo "Today is $full_day_name. WEEKEND!"
 else
-    echo "Dzis jest $full_day_name. DZIEN ROBOCZY!"
+    echo "Today is $full_day_name. WORKDAY!"
 fi
 
 
