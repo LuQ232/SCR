@@ -1,0 +1,20 @@
+Po utworzeniu wszystkich 3 skryptów włączamy pierwszy skrypt poleceniem:
+./skrypt_zad_2.sh &
+
+
+Proces zaczał działać. Teraz wyświetlamy liste procesów poleceniem:
+ps -f
+
+Ostatni w hierarchi proces czyli program_3.sh ma numer PPID = 58292
+
+Teraz zabijamy 2 w hierarchi proces czyli skrypt_zad_22.sh poleceniem:
+kill -9 58292
+
+Wyswietlamy procesy i obserwujemy zmiane numeru PPID w program_3.sh
+
+Numer PPID program_3.sh wynosi 47088
+
+Sprawdzamy co to za proces:
+ps -p 47088 -f
+
+Jest to proces pokrewny z initem (systemd).
