@@ -1,0 +1,29 @@
+Utworzyłem skrypt wyświetlający, przez 20 sekund, co sekunde aktualną godzinę.
+
+Włączamy skrypt poleceniem
+./skrypt.sh 
+
+Próbujemy zabić proces odpowiednio
+kill -2 nr_procesu  (SIGINT)  - proces nie został zabity
+kill -3 nr_procesu  (SIGQUIT) - proces nie został zabity
+kill -8 nr_procesu  (SIGFPE)  - proces zostaje zabity jednak z błędem zrzutu pamięci (core dumped).
+kill -9 nr_procesu  (SIGKILL) - proces został zabity
+
+Wnioski: 
+Skrypt zostal przerwany tylko dla SIGFPE oraz SIGKILL.
+
+
+
+
+
+2 część zadania:
+
+Dodałem polecenie trap w nowym skrypcie:
+trap "echo przechwycone sygnaly:" {1..15} 
+
+
+Po włączeniu skryptu żaden z sygnałów (oprócz SIGKILL(9)) nie jest w stanie zabić procesu.
+Dodatkowo każda próba zabicia procesu jest przechwytywania przez polecenie trap.
+
+
+
