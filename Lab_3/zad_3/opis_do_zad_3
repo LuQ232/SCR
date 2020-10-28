@@ -1,0 +1,14 @@
+Utworzyłem 3 skrypty, które "coś" robią (w zasadzie inkrementują zmienną w pętli).
+
+
+Do utworzenia potoku 3 procesów używamy polecenia:
+./skrypt_1.sh | ./skrypt_2.sh | ./skrypt_3.sh &
+
+
+Gdy procesy działają w tle wyświetlamy liste z informacjami procesów poleceniem:
+ps -f
+
+
+Wniosek:
+Możemy łatwo zaobserwować, że procesy wywołane w potoku mają wspólnego rodzica!!!!!
+
