@@ -1,0 +1,18 @@
+W celu wykonania zadania stworzyłem odpowiedni skrypt znajdujący się w tym folderze.
+
+Sprawdziłem wartość maksymalną włączonych procesów przypadających na zalogowanego użytkownika komendą:
+ulimit -u
+
+maksymalna ilość włączonych procesów wynosiła 31167
+
+
+Altualnie na moim komputerze działało 296 procesów.
+
+
+Zmieniłem wartość zmiennej ulimit na 300 przy użyciu komendy:
+ulimit -u 300
+
+Próbując włączyć skrypt lub użyć dowolnego polecenia w bashu otrzymywałem komunikat z błędem:
+"bash: fork: retry: Resource temporarily unavailable"
+
+Wynika to ze zbyt małej ilości dozwolonych działających procesów.
