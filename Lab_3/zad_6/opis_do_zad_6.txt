@@ -1,4 +1,4 @@
-Do wykonania stworzyłem prosty skrypt w języku bash.
+Do wykonania zadania stworzyłem prosty skrypt w języku bash.
 
 Skrypt włączyłem w tle przy użyciu komendy:
 ./skrypt_1.sh &
