@@ -1,0 +1,18 @@
+Pierwszym etapem ćwiczenia było stworzenie potoku fifo poleceniem:
+mknod NAZWA_POTOKU p
+
+Otworzyłem 4 terminale. W dwóch z nich używając komendy cat > NAZWA_POTOKU wpisujemy dane do potoku.
+W kolejnych 2 terminalach używając komendy cat NAZWA_POTOKU odczytujemy dane z potoku.
+
+Wyświetlanie informacji w danym terminalu było losowe i niezależne w jakim terminalu były wpisywanie dane do potoku.
+
+
+Dalej sprawdziłem jak zachowuje się potok, gdy zabijamy poszczególne procesy.
+
+Z przeprowadzonych badań wynika, że zamknięcie wszystkich procesów odpowiadających za wpisywanie informacji
+do potoku powoduje również zamknięcie procesów odpowiedzialnych za wyświetlanie informacji. Zabicie procesów
+odpowiedzialnych za wyświetlanie informacji nie powoduje zabicia procesów wprowadzających dane do potoku.
+
+
+Potwierdzeniem wykonania zadania jest screen załączony w folderze zad_4. 
+
