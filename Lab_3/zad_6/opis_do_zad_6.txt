@@ -1,0 +1,25 @@
+Do wykonania stworzyłem prosty skrypt w języku bash.
+
+Skrypt włączyłem w tle przy użyciu komendy:
+./skrypt_1.sh &
+
+Następnie wyświetliłem procesy komendą:
+ps T
+
+Wysłałem sygnał SIGSTOP do działającego procesu komendą:
+kill -19 NR_PROCESU
+u mnie: kill -19 146887
+
+Proces został zatrzymany. Następnie wznowiłem proces wysyłając mu sygnał SIGCONT komendą:
+kill -18 NR_PROCESU
+u mnie: kill -18 146887
+
+Analogicznie przetestowałem działanie zatrzymania procesu skrótem klawiszowym CTRL+Z.
+
+Proces wznawiamy używając komendy bg.
+
+Wykonanie całego zadania jest widoczne na załączonym screenie z konsoli.
+
+Warto zauważyć, że podczas zatrzymywania procesu sygnałem SIGSTOP, mamy możliwość 
+podejrzenia w konsoli informacji o tym, że proces jest uśpiony. Natomiast używając skrótu klawiszowego
+CTRL+Z pomimo zawieszenia procesu nie jest to tak widoczne gdy użyjemy komendy ps T. 
