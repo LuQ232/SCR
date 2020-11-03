@@ -1,0 +1,35 @@
+1. Przetestowano odpowiednio komendę ps z flagami -l oraz -f
+
+    ps -f  ---> Odpowiednio wyświetla informację na temat uruchomionych procesów na komputerze / serwerze
+    ps -l  ---> Analogicznie jak wyżej, dodatkowo uzyskujemy tzw. "długi format" wyświetlania procesów
+                ( wiecej     informacji)
+
+
+
+2. Obsługa komendy ps z parametrami -u -t oraz -p
+
+dla przykładu wykorzystano komendy:
+
+ps -u piotr -f  ----> Wyświetlamy procesy używane przez użytkownika o nazwie piotr
+
+ps -t pts/0     ----> Wyświetlamy procesy "włączone" przez terminal nr 0
+
+ps -p 1 -f      ----> Wyświetlamy informacje o procesie o numerze 1 (czyli root)
+
+
+
+3. Sprawdzenie ilości procesów działających w systemie
+
+ps -e | wc -l
+
+W moim systemie działało 317 procesów.
+
+
+
+4. Sprawdzenie ilości procesów sshd na diablo
+
+pgrep sshd | wc -l
+
+Na diablo istniało 5 procesów sshd.
+
+
