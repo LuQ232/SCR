@@ -1,0 +1,20 @@
+Do wykonania zadania utworzyłem prosty skrypt w jezyku bash.
+
+Włączyłem skrypt w tle za pomocą komendy:
+./skrypt_1.sh &
+
+Następnie wyświetliłem informacje na temat procesów komendą:
+ps -fl
+
+Zmieniłem wartość zmiennej nice procesu działającego skryptu za pomocą komendy:
+renice -n 10 -p NR_PROCESU
+u mnie: renice -n 10 -p 168126
+
+Wyswietliłem informację o procesach komedną ps-fl i porównałem wartości.
+
+Priorytet dla tego procesu został zmieniony z wartości 0 do wartości 10. - priorytet zmalał.
+
+
+Warto pamiętać, że zwykły użytkownik może tylko zwiększać wartość zmiennej nice, a więc zmniejszać priorytet.
+Aby zwiększyć te zmienną należy zalogować się na root'a.
+
