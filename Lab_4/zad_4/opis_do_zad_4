@@ -1,0 +1,12 @@
+Do wykonania zadania nr 4 napisano skrypt w języku bash.
+W jednym terminalu włączamy skrypt natomiast w drugim terminalu przechodzimy
+do folderu ~/proc/NR_SKRYPTU
+u mnie: ~/proc/40508 i wywołujemy polecenie cat status. (patrz screen_1).
+
+
+Odczytujemy wartość SigCgt. U mnie -> 00000000000017eff  (patrz screen_2).
+Po przekonwertowaniu tej liczby na system binarny otrzymujemy -> 10111111011111111
+Uzyskany wynik oznacza,że wszystkie sygnały są przechwytywane, poza 9 oraz 16.
+
+Odwołując się do ostatnich pytań z polecenia: Tak, możemy odtworzyć kolejność wywołania w potoku.
+Wystarczy popatrzeć na screen_2 i porównywać odopowiednio numery pipe podświetlone na czerwono.
