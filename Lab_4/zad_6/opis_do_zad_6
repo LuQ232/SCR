@@ -1,0 +1,27 @@
+Do wykonania zadania napisano program program.c
+
+a)
+Następnie w terminalu używamy komendy strace ./program.exe
+Otrzymany wynik znajduje sie na screenie nr 1.
+
+Opis niektórych przydatnych funkcji:
+-execve() - uruchamiany do wczytania programu, 1 argument: nazwa programu, 2 argument tablica z nazwa programu 
+i argumentami wywołania, 3 argument: zmienne środowiskowe, =0 oznacza poprawne wczytanie
+-brk(NULL) - ustawienie szczytu sterty do alokacji pamięci
+-access() - sprawdza pozwolenia plików podanych jako argumenty
+-openat() - wczytuje pliki w których powinny być szukane biblioteki
+-fstat() - zbiera argumenty - cechy deskryptora plikow
+-mmap() - mapuje plik do pamięci wirtualnej
+-mprotect() - aktualizuje ochronę pamięci po mapowaniu
+-close() - zwalnia deskryptor plikow
+-write() - wypisuje tekst
+
+b)
+W terminalu wystarczy użyć komendy:
+strace -e trace=openat bash  (patrz screen nr 2)
+
+c) 
+Zadanie wykonano i rezultat możemy zobaczyć na screenie nr 3.
+
+d)
+Aby wyświetlić napis na ekranie potrzeba file descriptor stdout (1), ale program wykorzystuje wszystkie file descriptory
