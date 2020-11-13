@@ -1,0 +1,21 @@
+Polecenie strace służy do badania jakie wywołania systemowe
+lub sygnały wykorzystuje badany proces.
+
+W folderze znajduje się screenshot z przykładowego wykonania.
+
+
+
+Polecenie strace produkuje bardzo dużo informacji wyjściowych, dlatego
+warto znać kilka przydatnych flag wywołania w celu filtracji informacji.
+
+Wywołanie: "strace -r proces" - wywołanie pokazuje czas po którym wykonywane 
+są wywołania systemowe przez badany proces
+
+Wywołanie: "strace -t proces" - wywołanie dziala podobnie do wywołania z flagą -r
+tylko zamiast czasu od uruchomienia procesu pokazuje czas systemowy
+
+Wywołanie: "strace -T proces" - wywołanie pokazuje czas poświęcony na realizację
+każdego wywołania systemu
+
+Wywołanie: "strace -c proces" - wywołanie pokazuje sumaryczne informacje
+dla wykorzystanych przez proces wywołań systemowych.
