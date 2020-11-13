@@ -1,0 +1,12 @@
+Proc jest wirtualnym systemem plików, tworzonych podczas uruchamiania systemu.
+Analogicznie jest rozwiązywany podczas zamykania systemu. Jest on centrum kontroli
+i informacji o kernelu. System plików proc zapewnia komunikację pomiędzy 
+przestrzenią użytkownika a przestrzenią jądra.
+
+Używając polecenia ls -l ~/proc można wyswietlić zawartość katalogu /proc.
+Nazwa każdego  z widocznych katalogów odpowiada liczbie ID procesu. 
+
+Korzystając ze znanych komend ps,ls,cd,grep można w łatwy sposób poruszać się po poniższych
+katalogach, wyświetlać dane i informacje o procesach.
+
+Załączony screen ukazuje wynik konsoli po wejściu w dane dowolnego procesu.
