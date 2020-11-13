@@ -1,0 +1,10 @@
+Programem zabijającym działanie programu był sygnał SIGSEGV(11).
+Jest on sygnałem wysyłanym zawsze podczas nielegalnej operacji
+na wirtualnej pamięci lub przy segmentation fault.
+
+Oczywiście błąd w tym programie jest spowodowany przekroczeniem 
+pamięci zmiennej "napis". (Wykraczamy poza dozwoloną pamięć).
+
+W programie brakuje warunku skończenia wypisywania napisu.
+
+
