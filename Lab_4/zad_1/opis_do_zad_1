@@ -1,0 +1,14 @@
+Napisano program program1.c , który w pętli inkrementował zmienną.
+
+Po włączeniu programu i wywołaniu polecenia top w konsoli
+łatwo zauważyć, że nasz skrypt znajduje sie na 1 miesjcu,
+czyli zajmuje najwięcej zasobów procesora.
+
+
+
+Napisano program program1.c, który w pętli inkrementował  zmienną oraz czekał 100 milisekund.
+
+Po włączeniu programu i wywołaniu polecenia top w konsoli łatwo zauważyć, że program nie znajduje się w procesach znacznie zajmujących zasoby procesora. Jest to spowodowane tym, że program nie był wykonywany w tak duzej częstotliwości.
+
+Warto pamiętać o tym, że częstotliwość odświeżania można zmieniać za pomocą flagi -d.
+
