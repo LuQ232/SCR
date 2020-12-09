@@ -26,7 +26,7 @@ int main(){
 
 	if(process_id == 0)
 	{
-		execlp("display","-","-update","1",obr_map,NULL);
+		execlp("display","display","-update","1",obr_map,NULL);
 	}
 
 	if(process_id > 0)
