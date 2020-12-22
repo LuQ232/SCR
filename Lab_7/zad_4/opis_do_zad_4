@@ -1,0 +1,1 @@
+W programie bug5 błąd powodowało brak "pthread_exit(NULL);" na końcu maina.
