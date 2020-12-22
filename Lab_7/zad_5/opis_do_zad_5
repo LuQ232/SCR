@@ -1,0 +1,1 @@
+Detached zwalnia wszystkie zasoby po zakończeniu funkcji, natomiast joinable oczekuje aż inna funkcja "zjoinuje".
