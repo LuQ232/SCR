@@ -1,0 +1,5 @@
+Wiele argumentów do wątku przekazujemy wykorzystując struktury poprzez wskaźnik na void. 
+Dalej używamy rzutowania na interesujące nas zmienne.
+
+W programie bug3.c przekazywanie do funkcji zmiennej przez referencje powodowało błąd.
+
