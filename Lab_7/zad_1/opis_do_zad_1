@@ -1,0 +1,2 @@
+Zwracając uwagę na wyjście programu można zauważyć, że kolejność wykonywania funkcji przez wątki 
+jest dowolna i za każdym włączeniem programu inna. Zależy to od planisty systemu operacyjnego.
